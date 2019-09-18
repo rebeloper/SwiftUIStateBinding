@@ -13,6 +13,13 @@
 		9C6D6FE8233205AC006395A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6D6FE7233205AC006395A3 /* Assets.xcassets */; };
 		9C6D6FEB233205AC006395A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6D6FEA233205AC006395A3 /* Preview Assets.xcassets */; };
 		9C6D6FEE233205AC006395A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6D6FEC233205AC006395A3 /* LaunchScreen.storyboard */; };
+		9C6D6FF623320751006395A3 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D6FF523320751006395A3 /* SwitchView.swift */; };
+		9C6D6FF82332095D006395A3 /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D6FF72332095D006395A3 /* TabbedView.swift */; };
+		9C6D6FFE233210E1006395A3 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D6FFD233210E1006395A3 /* ScoreView.swift */; };
+		9C6D7000233211E3006395A3 /* UserStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D6FFF233211E3006395A3 /* UserStats.swift */; };
+		9C6D700423321962006395A3 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D700323321962006395A3 /* UserSettings.swift */; };
+		9C6D7006233219EA006395A3 /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D7005233219EA006395A3 /* UserSettingsView.swift */; };
+		9C6D700823321A25006395A3 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D700723321A25006395A3 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		9C6D6FEA233205AC006395A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C6D6FED233205AC006395A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C6D6FEF233205AC006395A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C6D6FF523320751006395A3 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
+		9C6D6FF72332095D006395A3 /* TabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedView.swift; sourceTree = "<group>"; };
+		9C6D6FFD233210E1006395A3 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		9C6D6FFF233211E3006395A3 /* UserStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStats.swift; sourceTree = "<group>"; };
+		9C6D700323321962006395A3 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		9C6D7005233219EA006395A3 /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
+		9C6D700723321A25006395A3 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +70,10 @@
 		9C6D6FE0233205AB006395A3 /* SwiftUIStateBinding */ = {
 			isa = PBXGroup;
 			children = (
-				9C6D6FE1233205AB006395A3 /* AppDelegate.swift */,
-				9C6D6FE3233205AB006395A3 /* SceneDelegate.swift */,
-				9C6D6FE5233205AB006395A3 /* ContentView.swift */,
+				9C6D700923321DA1006395A3 /* Main */,
+				9C6D700A23321DB6006395A3 /* StateAndBinding */,
+				9C6D700B23321DE7006395A3 /* ObservedObject */,
+				9C6D700C23321E37006395A3 /* EnvironmentObject */,
 				9C6D6FE7233205AC006395A3 /* Assets.xcassets */,
 				9C6D6FEC233205AC006395A3 /* LaunchScreen.storyboard */,
 				9C6D6FEF233205AC006395A3 /* Info.plist */,
@@ -73,6 +88,44 @@
 				9C6D6FEA233205AC006395A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C6D700923321DA1006395A3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9C6D6FE1233205AB006395A3 /* AppDelegate.swift */,
+				9C6D6FE3233205AB006395A3 /* SceneDelegate.swift */,
+				9C6D6FF72332095D006395A3 /* TabbedView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9C6D700A23321DB6006395A3 /* StateAndBinding */ = {
+			isa = PBXGroup;
+			children = (
+				9C6D6FE5233205AB006395A3 /* ContentView.swift */,
+				9C6D6FF523320751006395A3 /* SwitchView.swift */,
+			);
+			path = StateAndBinding;
+			sourceTree = "<group>";
+		};
+		9C6D700B23321DE7006395A3 /* ObservedObject */ = {
+			isa = PBXGroup;
+			children = (
+				9C6D6FFD233210E1006395A3 /* ScoreView.swift */,
+				9C6D6FFF233211E3006395A3 /* UserStats.swift */,
+			);
+			path = ObservedObject;
+			sourceTree = "<group>";
+		};
+		9C6D700C23321E37006395A3 /* EnvironmentObject */ = {
+			isa = PBXGroup;
+			children = (
+				9C6D7005233219EA006395A3 /* UserSettingsView.swift */,
+				9C6D700723321A25006395A3 /* EditView.swift */,
+				9C6D700323321962006395A3 /* UserSettings.swift */,
+			);
+			path = EnvironmentObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6D6FF623320751006395A3 /* SwitchView.swift in Sources */,
+				9C6D6FFE233210E1006395A3 /* ScoreView.swift in Sources */,
+				9C6D700823321A25006395A3 /* EditView.swift in Sources */,
+				9C6D6FF82332095D006395A3 /* TabbedView.swift in Sources */,
+				9C6D700423321962006395A3 /* UserSettings.swift in Sources */,
+				9C6D7006233219EA006395A3 /* UserSettingsView.swift in Sources */,
 				9C6D6FE2233205AB006395A3 /* AppDelegate.swift in Sources */,
+				9C6D7000233211E3006395A3 /* UserStats.swift in Sources */,
 				9C6D6FE4233205AB006395A3 /* SceneDelegate.swift in Sources */,
 				9C6D6FE6233205AB006395A3 /* ContentView.swift in Sources */,
 			);
@@ -286,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStateBinding/Preview Content\"";
+				DEVELOPMENT_TEAM = R252PR8AVU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIStateBinding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStateBinding/Preview Content\"";
+				DEVELOPMENT_TEAM = R252PR8AVU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIStateBinding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

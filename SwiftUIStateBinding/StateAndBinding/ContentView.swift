@@ -9,8 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var switchIsOn = false
+    
     var body: some View {
-        Text("Hello World")
+        VStack {
+            Text(switchIsOn ? "🤓" : "😎")
+                .font(.system(size: 100))
+            
+            SwitchView(switchIsOn: $switchIsOn)
+        }
     }
 }
 
